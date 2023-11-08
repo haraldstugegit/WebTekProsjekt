@@ -116,6 +116,25 @@ body {
     left: 50%;
 }
 
+/* Add these styles for the slideshow */
+.slideshow-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px; /* Add margin to separate content from slideshow */
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .navbtn {
