@@ -83,20 +83,20 @@ body {
 
 .contactUsLeft {
     flex: 1;
-    border-style: groove;
     margin-right: 10px;
     margin-left: 20px;
     background-color: whitesmoke;
     color: #333333;
+    border-radius: 10px;
 }
 
 .contactUsRight {
     flex: 1;
-    border-style: groove;
     margin-right: 10px;
     margin-left: 20px;
     background-color: whitesmoke;
     color: #333333;
+    border-radius: 10px;
 }
 
 #submitFeedback {
