@@ -77,7 +77,32 @@ body {
     background-color: #ddd;
 }
 
+.contactUsContainer {
+    display: flex;
+}
 
+.contactUsLeft {
+    flex: 1;
+    border-style: groove;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+.contactUsRight {
+    flex: 1;
+    border-style: groove;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+#submitFeedback {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
