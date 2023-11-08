@@ -1,25 +1,19 @@
-document.getElementById('home').addEventListener('click', function() {
-    // Redirect to the home page
-    window.location.href = "homepage.html";
-});
-
-document.getElementById('about').addEventListener('click', function() {
-    // Redirect to the home page
-    window.location.href = "about.html";
-});
-
-document.getElementById('menu').addEventListener('click', function() {
-    // Redirect to the home page
-    window.location.href = "menu.html";
-});
-
-document.getElementById('contact').addEventListener('click', function() {
-    // Redirect to the home page
-    window.location.href = "contactUs.html";
-});
-
-document.getElementById('opening').addEventListener('click', function() {
-    // Redirect to the home page
-    window.location.href = "openingHours.html";
-});
+document.addEventListener("DOMContentLoaded", function () {
+    // Define the link URLs for each button
+    const links = {
+      home: "homepage.html",
+      about: "about.html",
+      menu: "menu.html",
+      contact: "contactUs.html",
+      opening: "openingHours.html",
+    };
+  
+    // Update the href attributes for each button in the navigation menu
+    for (const buttonId in links) {
+      const button = document.getElementById(buttonId);
+      if (button) {
+        button.href = links[buttonId];
+      }
+    }
+  });
 
