@@ -86,8 +86,8 @@ body {
     border-style: groove;
     margin-right: 10px;
     margin-left: 20px;
-    background-color: #333333;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #333333;
 }
 
 .contactUsRight {
@@ -95,8 +95,8 @@ body {
     border-style: groove;
     margin-right: 10px;
     margin-left: 20px;
-    background-color: #333333;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: #333333;
 }
 
 #submitFeedback {
