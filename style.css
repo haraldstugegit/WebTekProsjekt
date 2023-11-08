@@ -104,6 +104,10 @@ body {
     margin-bottom: 5px;
 }
 
+.contactUsInfo {
+    text-align: center;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .navbtn {
