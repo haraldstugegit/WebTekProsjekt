@@ -108,6 +108,14 @@ body {
     text-align: center;
 }
 
+#locations {
+    width: 330px;
+    height: 400px;
+    top: 40%;
+    right: 50%;
+    left: 50%;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
     .navbtn {
