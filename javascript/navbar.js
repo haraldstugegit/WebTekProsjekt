@@ -15,9 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var foot = `
         <div class="footer-left">
             <h3>Copyright information: </h3>
-            <ul>
-                <li>Source code is private information.</ul>
-            </ul>
+           
+                <p>Source code is private information.</p>
         </div>
         <div class="footer-middle">
             <a href="#" id="terms-media-link"><h3 id="rightFooter">Terms & Conditions</h3></a>
