@@ -1,25 +1,39 @@
-$(document).ready(function(){
-  $("#maki-menu, #nigiri-menu, #sashimi-menu").each(function() {
-      const menuGroup = $(this);
-      const menuItems = menuGroup.find(".menu-item");
-      const loadMoreButton = menuGroup.find(".loadMore");
-      const itemsToShow = 2;
+document.addEventListener("DOMContentLoaded", function() {
+  const menuGroups = document.querySelectorAll("#maki-menu, #nigiri-menu, #sashimi-menu");
 
-      //Hide all menu items.
-      menuItems.hide();
+  menuGroups.forEach(function(menuGroup) {
+    const menuItems = menuGroup.querySelectorAll(".menu-item");
+    const loadMoreButton = menuGroup.querySelector(".loadMore");
+    const itemsToShow = 2;
 
-      //Show the first 'itemsToShow' menu items.
-      menuItems.slice(0, itemsToShow).show();
+    //Hide all menu-items.
+    menuItems.forEach(function(item) {
+      item.style.display = "none";
+    });
 
-      //Show two more menu items when clicking loadMore button
-      loadMoreButton.on("click", function(e){
-          e.preventDefault();
-          const hiddenItems = menuItems.filter(":hidden");
-          hiddenItems.slice(0, itemsToShow).slideDown();
+    //Show the first 'itemsToShow' menu-items.
+    for (let i = 0; i < itemsToShow; i++) {
+      if (menuItems[i]) {
+        menuItems[i].style.display = "flex";
+      }
+    }
 
-          if(hiddenItems.length <= itemsToShow) {
-              loadMoreButton.hide(); // Hide the button when there are no more items to load
-          }
+    //Show two more menu items when clicking the loadMore button
+    loadMoreButton.addEventListener("click", function(e) {
+      e.preventDefault();
+      const hiddenItems = Array.from(menuItems).filter(function(item) {
+        return item.style.display === "none";
       });
+
+      for (let i = 0; i < itemsToShow; i++) {
+        if (hiddenItems[i]) {
+          hiddenItems[i].style.display = "flex";
+        }
+      }
+
+      if (hiddenItems.length <= itemsToShow) {
+        loadMoreButton.style.display = "none"; //Hide the button when there are no more items to load
+      }
+    });
   });
 });
