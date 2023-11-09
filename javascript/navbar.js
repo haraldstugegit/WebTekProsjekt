@@ -12,8 +12,24 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
 `;
+    var foot = `
+    <footer>
+        <div class="footBanner" class="footBanner">
+            <p>Copyright information: </p>
+            <ul>
+                <li>Source code is private information.</ul>
+            </ul>
+            <p id="rightFooter">Terms & Conditions...</p>
+        </div>
+    </footer>`;
 
 document.body.insertAdjacentHTML('afterbegin', navbar);
+
+var footer = document.getElementById("footBanner");
+
+if (footer) {
+    footer.insertAdjacentHTML('afterbegin', foot);
+}
 
 // Define the link URLs for each button
 const links = {
