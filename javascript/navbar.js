@@ -13,15 +13,21 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 `;
     var foot = `
-    <footer>
-        <div class="footBanner" class="footBanner">
-            <p>Copyright information: </p>
+        <div class="footer-left">
+            <h3>Copyright information: </h3>
             <ul>
                 <li>Source code is private information.</ul>
             </ul>
-            <p id="rightFooter">Terms & Conditions...</p>
         </div>
-    </footer>`;
+        <div class="footer-middle">
+            <a href="#" id="terms-media-link"><h3 id="rightFooter">Terms & Conditions</h3></a>
+        </div>
+        <div class="footer-right">
+            <a href="#" class="social-media-link">
+                <img src="images/insta.png" alt="Social Media Icon">
+            </a>
+        </div>
+    `;
 
 document.body.insertAdjacentHTML('afterbegin', navbar);
 
