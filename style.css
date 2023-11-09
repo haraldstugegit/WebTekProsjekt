@@ -58,21 +58,45 @@ body {
     margin: 10px;
 }
 
-#footBanner {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333333;
+/* Add this CSS for the footer layout and icon styling */
+footer {
+    background-color: #333;
     color: white;
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: -50px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px
 }
 
-#rightFooter {
-    text-align: center;
+.footer-left,
+.footer-middle,
+.footer-right {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
 }
+
+
+.social-media-link {
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+.social-media-link img {
+    width: 24px; 
+    height: auto; 
+}
+
+
+.social-media-link:hover img {
+    opacity: 0.8;
+}
+
+#terms-media-link{
+    color: #ddd;
+}
+
 
 .navbtn {
     font-family: 'Arial', sans-serif;
@@ -103,16 +127,76 @@ body {
     background-color: whitesmoke;
     color: #333333;
     border-radius: 10px;
+    text-align: center;
 }
 
 .contactUsRight {
     flex: 1;
-    margin-right: 10px;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
     background-color: whitesmoke;
     color: #333333;
     border-radius: 10px;
 }
+
+.contactUsRight h1{
+    text-align: center;
+}
+
+
+label {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px; /* Add padding for spacing between label and input */
+    pointer-events: none; /* Allows clicking through the label to the input */
+    transition: all 0.2s ease-in-out; /* Optional: Add a smooth transition for label movement */
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    margin-left: 5px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -20px; 
+    font-size: 12px; 
+    color: #007BFF; 
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+button[type="submit"] {
+    background-color: lightslategrey;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: whitesmoke;
+}
+
+#submitFeedback {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
 
 #submitFeedback {
     margin-left: 5px;
