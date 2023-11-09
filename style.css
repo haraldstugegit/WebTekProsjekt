@@ -221,6 +221,8 @@ button[type="submit"]:hover {
     overflow: hidden;
     position: relative;
     margin-top: 20px; /* Add margin to separate content from slideshow */
+    align-content: center;
+    margin-left: 25px;
 }
 
 .slide {
@@ -230,6 +232,7 @@ button[type="submit"]:hover {
 .slide img {
     width: 100%;
     height: auto;
+
 }
 
 /* Responsive design for smaller screens */
