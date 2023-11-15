@@ -1,5 +1,6 @@
-
+//This JS.file handles the navbar and repeating code in our site
 document.addEventListener('DOMContentLoaded', function() {
+    //As soon as the DOM content is loaded we define the navbar and footer
     var navbar = `
         <div id="banner" class="banner">
         <h1 id="site-title">Sakura Sushi</h1>
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
 
+//Inserting the navbar and footer in the HTML page
 document.body.insertAdjacentHTML('afterbegin', navbar);
 
 var footer = document.getElementById("footBanner");
@@ -36,7 +38,7 @@ if (footer) {
     footer.insertAdjacentHTML('afterbegin', foot);
 }
 
-// Define the link URLs for each button
+//Define the link URLs for each button
 const links = {
     home: "homepage.html",
     about: "about.html",
@@ -45,7 +47,7 @@ const links = {
     opening: "openingHours.html",
   };
 
-  // Update the href attributes for each button in the navigation menu
+  //Update the href attributes for each button in the navigation menu
   for (const buttonId in links) {
     const button = document.getElementById(buttonId);
     if (button) {
